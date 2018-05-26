@@ -2,23 +2,27 @@ let express = require('express');
 let Map = require('./lib/Map');
 let Maps = require('./lib/Maps');
 let app = express();
+let bodyParser = require('body-parser');
 
 let maps = new Maps();
 maps.loadMaps();
 
-app.use(express.static('public/'));
-
 let logger = function (req, res, next) {
     try {
-        console.log('Request for ' + req._parsedOriginalUrl.path + ' from ' + req.headers.host + '.');
+        console.log('Request for ' + req._parsedUrl.path + ' from ' + req.headers.host + '.');
 
         next();
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 };
 
+app.use(express.static('public/'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(logger);
 
 /*
@@ -28,7 +32,7 @@ app.get('/api/', function (req, res) {
     try {
         res.send('Welcome to the #boef API!');
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 });
@@ -38,19 +42,19 @@ app.get('/api/', function (req, res) {
  */
 app.get('/api/maps', function (req, res) {
     try {
-        maps.getMapsAsJson(function(mapsJson) {
+        maps.getMapsAsJson(function (mapsJson) {
             res.send(JSON.stringify(mapsJson));
         });
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 });
 
-app.get('/api/maps/:mapName', function(req, res) {
+app.get('/api/maps/:mapName', function (req, res) {
     try {
-        maps.getMapByName(req.params.mapName, function(map) {
-            if(map) {
+        maps.getMapByName(req.params.mapName, function (map) {
+            if (map) {
                 res.send(JSON.stringify(map.getMap()));
             }
             else {
@@ -58,7 +62,7 @@ app.get('/api/maps/:mapName', function(req, res) {
             }
         });
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 });
@@ -66,10 +70,10 @@ app.get('/api/maps/:mapName', function(req, res) {
 /*
  * Everything scores
  */
-app.get('/api/maps/:mapName/scores', function(req, res) {
+app.get('/api/maps/:mapName/scores', function (req, res) {
     try {
-        maps.getMapByName(req.params.mapName, function(map) {
-            if(map) {
+        maps.getMapByName(req.params.mapName, function (map) {
+            if (map) {
                 res.send(JSON.stringify(map.getScores()));
             }
             else {
@@ -77,29 +81,29 @@ app.get('/api/maps/:mapName/scores', function(req, res) {
             }
         });
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 });
 
-app.post('/api/maps/:mapName/scores', function(req, res) {
+app.post('/api/maps/:mapName/scores', function (req, res) {
     try {
         let username = 'anonymous';
-        if(req.body.username)
+        if (req.body.username)
             username = req.body.username;
 
         let score = 0;
-        if(req.body.score)
+        if (req.body.score)
             score = parseInt(req.body.score);
 
-        maps.getMapByName(req.params.mapName, function(map) {
+        maps.getMapByName(req.params.mapName, function (map) {
             map.saveScore({
                 username: username,
                 score: score,
             });
         });
     }
-    catch(e) {
+    catch (e) {
         console.log(e);
     }
 
