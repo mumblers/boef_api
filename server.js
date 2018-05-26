@@ -24,7 +24,7 @@ app.use(logger);
 /*
  * Root page
  */
-app.get('/', function (req, res) {
+app.get('/api/', function (req, res) {
     try {
         res.send('Welcome to the #boef API!');
     }
@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 /*
  * Everything maps
  */
-app.get('/maps', function (req, res) {
+app.get('/api/maps', function (req, res) {
     try {
         maps.getMapsAsJson(function(mapsJson) {
             res.send(JSON.stringify(mapsJson));
@@ -47,7 +47,7 @@ app.get('/maps', function (req, res) {
     }
 });
 
-app.get('/maps/:mapName', function(req, res) {
+app.get('/api/maps/:mapName', function(req, res) {
     try {
         maps.getMapByName(req.params.mapName, function(map) {
             if(map) {
@@ -66,7 +66,7 @@ app.get('/maps/:mapName', function(req, res) {
 /*
  * Everything scores
  */
-app.get('/maps/:mapName/scores', function(req, res) {
+app.get('/api/maps/:mapName/scores', function(req, res) {
     try {
         maps.getMapByName(req.params.mapName, function(map) {
             if(map) {
@@ -82,7 +82,7 @@ app.get('/maps/:mapName/scores', function(req, res) {
     }
 });
 
-app.post('/maps/:mapName/scores', function(req, res) {
+app.post('/api/maps/:mapName/scores', function(req, res) {
     try {
         let username = 'anonymous';
         if(req.body.username)
