@@ -4,7 +4,8 @@ let Maps = require('./lib/Maps');
 let app = express();
 
 let maps = new Maps();
-maps.setFakeData();
+//maps.setFakeData();
+maps.loadMaps();
 
 app.use(express.static('public/'));
 
@@ -38,7 +39,7 @@ app.get('/', function (req, res) {
  */
 app.get('/maps', function (req, res) {
     try {
-        maps.getMaps(function(mapsJson) {
+        maps.getMapsAsJson(function(mapsJson) {
             res.send(JSON.stringify(mapsJson));
         });
     }
@@ -51,7 +52,7 @@ app.get('/maps/map/:mapName', function(req, res) {
     try {
         maps.getMapByName(req.params.mapName, function(map) {
             if(map) {
-                res.send(JSON.stringify(map));
+                res.send(JSON.stringify(map.getMap()));
             }
             else {
                 res.send('Map not found');
@@ -66,9 +67,16 @@ app.get('/maps/map/:mapName', function(req, res) {
 /*
  * Everything scores
  */
-app.get('/maps/map/:mapId/scores', function(req, res) {
+app.get('/maps/map/:mapName/scores', function(req, res) {
     try {
-
+        maps.getMapByName(req.params.mapName, function(map) {
+            if(map) {
+                res.send(JSON.stringify(map.getScores()));
+            }
+            else {
+                res.send('Map not found');
+            }
+        });
     }
     catch(e) {
         console.log(e);
