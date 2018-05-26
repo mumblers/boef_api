@@ -322,5 +322,11 @@
     "x": 6,
     "y": 5,
     "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 9,
+    "y": 10,
+    "rotation": 0
   }
 ]
