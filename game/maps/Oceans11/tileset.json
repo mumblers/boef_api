@@ -1,8 +1,38 @@
 [
   {
-    "type": "street",
+    "type": "house",
     "x": 0,
     "y": 0,
-    "rotation": 90
-  }
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 128,
+    "y": 0,
+    "rotation": 0
+  },
+  {
+    "type": "house",
+    "x": 256,
+    "y": 0,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 0,
+    "y": 128,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 128,
+    "y": 128,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 256,
+    "y": 128,
+    "rotation": 0
+  },
 ]
