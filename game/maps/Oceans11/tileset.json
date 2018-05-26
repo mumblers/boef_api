@@ -7,32 +7,32 @@
   },
   {
     "type": "street",
-    "x": 128,
+    "x": 1,
     "y": 0,
     "rotation": 0
   },
   {
     "type": "house",
-    "x": 256,
+    "x": 2,
     "y": 0,
     "rotation": 0
   },
   {
     "type": "street",
     "x": 0,
-    "y": 128,
+    "y": 1,
     "rotation": 0
   },
   {
     "type": "street",
-    "x": 128,
-    "y": 128,
+    "x": 1,
+    "y": 1,
     "rotation": 0
   },
   {
     "type": "street",
-    "x": 256,
-    "y": 128,
+    "x": 2,
+    "y": 1,
     "rotation": 0
   }
 ]
