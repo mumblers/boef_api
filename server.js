@@ -90,7 +90,7 @@ app.post('/maps/:mapName/scores', function(req, res) {
 
         let score = 0;
         if(req.body.score)
-            let score = parseInt(req.body.score);
+            score = parseInt(req.body.score);
 
         maps.getMapByName(req.params.mapName, function(map) {
             map.saveScore({
