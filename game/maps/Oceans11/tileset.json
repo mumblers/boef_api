@@ -1,38 +1,98 @@
 [
   {
-    "type": "house",
-    "x": 0,
-    "y": 0,
+    "type": "street",
+    "x": 3,
+    "y": 1,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 4,
+    "y": 1,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 5,
+    "y": 1,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 6,
+    "y": 1,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 2,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 3,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 5,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 6,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 7,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 3,
+    "y": 8,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 2,
+    "y": 6,
     "rotation": 0
   },
   {
     "type": "street",
     "x": 1,
-    "y": 0,
-    "rotation": 0
-  },
-  {
-    "type": "house",
-    "x": 2,
-    "y": 0,
-    "rotation": 0
-  },
-  {
-    "type": "street",
-    "x": 0,
-    "y": 1,
+    "y": 6,
     "rotation": 0
   },
   {
     "type": "street",
     "x": 1,
-    "y": 1,
+    "y": 7,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 1,
+    "y": 8,
     "rotation": 0
   },
   {
     "type": "street",
     "x": 2,
-    "y": 1,
+    "y": 8,
     "rotation": 0
   }
 ]
