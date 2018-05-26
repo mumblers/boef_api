@@ -235,6 +235,78 @@
   },
   {
     "type": "street",
+    "x": 11,
+    "y": 8,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 11,
+    "y": 7,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 11,
+    "y": 6,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 11,
+    "y": 5,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 11,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 12,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 10,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 9,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 8,
+    "y": 4,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 8,
+    "y": 6,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 9,
+    "y": 6,
+    "rotation": 0
+  },
+  {
+    "type": "street",
+    "x": 10,
+    "y": 6,
+    "rotation": 0
+  },
+  {
+    "type": "street",
     "x": 4,
     "y": 5,
     "rotation": 0

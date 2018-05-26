@@ -1,6 +1,12 @@
 [
   {
-    "type": "camera_pole_sphere",
+    "type": "camera_pole",
+    "x": 128,
+    "y": 0,
+    "rotation": 0
+  },
+  {
+    "type": "camera_sphere",
     "x": 128,
     "y": 0,
     "rotation": 0
