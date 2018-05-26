@@ -4,7 +4,6 @@ let Maps = require('./lib/Maps');
 let app = express();
 
 let maps = new Maps();
-//maps.setFakeData();
 maps.loadMaps();
 
 app.use(express.static('public/'));
@@ -48,7 +47,7 @@ app.get('/maps', function (req, res) {
     }
 });
 
-app.get('/maps/map/:mapName', function(req, res) {
+app.get('/maps/:mapName', function(req, res) {
     try {
         maps.getMapByName(req.params.mapName, function(map) {
             if(map) {
@@ -67,7 +66,7 @@ app.get('/maps/map/:mapName', function(req, res) {
 /*
  * Everything scores
  */
-app.get('/maps/map/:mapName/scores', function(req, res) {
+app.get('/maps/:mapName/scores', function(req, res) {
     try {
         maps.getMapByName(req.params.mapName, function(map) {
             if(map) {
@@ -81,6 +80,30 @@ app.get('/maps/map/:mapName/scores', function(req, res) {
     catch(e) {
         console.log(e);
     }
+});
+
+app.post('/maps/:mapName/scores', function(req, res) {
+    try {
+        let username = 'anonymous';
+        if(req.body.username)
+            username = req.body.username;
+
+        let score = 0;
+        if(req.body.score)
+            let score = parseInt(req.body.score);
+
+        maps.getMapByName(req.params.mapName, function(map) {
+            map.saveScore({
+                username: username,
+                score: score,
+            });
+        });
+    }
+    catch(e) {
+        console.log(e);
+    }
+
+    res.send('');
 });
 
 app.listen(80, function () {
