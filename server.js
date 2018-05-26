@@ -106,6 +106,6 @@ app.post('/maps/:mapName/scores', function(req, res) {
     res.send('');
 });
 
-app.listen(80, function () {
+app.listen(8080, function () {
     console.log('started app!');
 });
