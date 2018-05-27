@@ -25,13 +25,37 @@
   },
   {
     "type": "camera_pole",
-    "x": 1280,
+    "x": 1304,
+    "y": 192,
+    "rotation": 0
+  },
+  {
+    "type": "camera_directional",
+    "x": 1304,
+    "y": 192,
+    "rotation": 0
+  },
+  {
+    "type": "camera_pole",
+    "x": 1560,
+    "y": 576,
+    "rotation": 0
+  },
+  {
+    "type": "camera_sphere",
+    "x": 1560,
+    "y": 576,
+    "rotation": 0
+  },
+  {
+    "type": "camera_pole",
+    "x": 1304,
     "y": 832,
     "rotation": 0
   },
   {
     "type": "camera_sphere",
-    "x": 1280,
+    "x": 1304,
     "y": 832,
     "rotation": 0
   }
