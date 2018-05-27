@@ -2,13 +2,13 @@
   {
     "type": "camera_pole",
     "x": 128,
-    "y": 384,
+    "y": 256,
     "rotation": 0
   },
   {
     "type": "camera_sphere",
     "x": 128,
-    "y": 384,
+    "y": 256,
     "rotation": 0
   },
   {
@@ -21,6 +21,18 @@
     "type": "camera_directional",
     "x": 384,
     "y": 512,
+    "rotation": 0
+  },
+  {
+    "type": "camera_pole",
+    "x": 1280,
+    "y": 768,
+    "rotation": 0
+  },
+  {
+    "type": "camera_sphere",
+    "x": 1280,
+    "y": 768,
     "rotation": 0
   }
 ]
