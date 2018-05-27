@@ -1,7 +1,31 @@
 [
+  {"x": 0, "y": 0, "type": "park", "rotation": 90},
+  {"x": 1, "y": 0, "type": "park", "rotation": 90},
+  {"x": 2, "y": 0, "type": "park", "rotation": 90},
+  {"x": 3, "y": 0, "type": "park", "rotation": 90},
+  {"x": 4, "y": 0, "type": "park", "rotation": 90},
+  {"x": 5, "y": 0, "type": "park", "rotation": 90},
+  {"x": 6, "y": 0, "type": "park", "rotation": 90},
+  {"x": 7, "y": 0, "type": "park", "rotation": 90},
+  {"x": 8, "y": 0, "type": "park", "rotation": 90},
+  {"x": 9, "y": 0, "type": "park", "rotation": 90},
+  {"x": 10, "y": 0, "type": "park", "rotation": 90},
+  {"x": 11, "y": 0, "type": "park", "rotation": 90},
+  {"x": 12, "y": 0, "type": "park", "rotation": 90},
+
   {"x": 4, "y": 2, "type": "house_red", "rotation": 90},
   {"x": 4, "y": 3, "type": "house_red", "rotation": 90},
   {"x": 4, "y": 4, "type": "house_red", "rotation": 90},
+
+  {"x": 0, "y": 1, "type": "house_grey", "rotation": 90},
+  {"x": 1, "y": 1, "type": "house_grey", "rotation": 90},
+  {"x": 2, "y": 1, "type": "house_grey", "rotation": 90},
+
+
+
+  {"x": 0, "y": 1, "type": "street", "rotation": 0},
+  {"x": 1, "y": 1, "type": "street", "rotation": 0},
+
   {"x": 3, "y": 1, "type": "street", "rotation": 0},
   {"x": 4, "y": 1, "type": "street", "rotation": 0},
   {"x": 5, "y": 1, "type": "street", "rotation": 0},
