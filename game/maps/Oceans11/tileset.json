@@ -29,16 +29,16 @@
 
 
   {"x": 0, "y": 5, "type": "house_red", "rotation": 0},
-  {"x": 1, "y": 5, "type": "house_gray", "rotation": 0},
+  {"x": 1, "y": 5, "type": "house_grey", "rotation": 0},
   {"x": 2, "y": 5, "type": "house_silver", "rotation": 0},
 
   {"x": 0, "y": 4, "type": "house_red_roof", "rotation": 0},
-  {"x": 1, "y": 4, "type": "house_gray_roof", "rotation": 0},
+  {"x": 1, "y": 4, "type": "house_grey_roof", "rotation": 0},
   {"x": 2, "y": 4, "type": "house_silver_roof", "rotation": 0},
 
-  {"x": 0, "y": 5, "type": "house_red_roof", "rotation": 0},
-  {"x": 1, "y": 5, "type": "house_gray_roof", "rotation": 0},
-  {"x": 2, "y": 5, "type": "house_silver_roof", "rotation": 0},
+  {"x": 0, "y": 3, "type": "house_red_roof", "rotation": 0},
+  {"x": 1, "y": 3, "type": "house_grey_roof", "rotation": 0},
+  {"x": 2, "y": 3, "type": "house_silver_roof", "rotation": 0},
 
 
 
