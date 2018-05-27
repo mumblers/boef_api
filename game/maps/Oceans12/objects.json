@@ -12,9 +12,9 @@
   },
 
   {
-    "x": 920, "y": 192, "type": "camera_pole", "rotation": 0
+    "x": 880, "y": 192, "type": "camera_pole", "rotation": 0
   }, {
-    "x": 920, "y": 192, "type": "camera_directional", "rotation": 0
+    "x": 880, "y": 192, "type": "camera_directional", "rotation": 0
   },
 
   {
