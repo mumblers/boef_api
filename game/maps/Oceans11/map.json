@@ -2,5 +2,7 @@
   "name": "Oceans11",
   "width": 13,
   "height": 11,
-  "scale": 128
+  "scale": 128,
+  "startX": 6,
+  "startY": 1
 }
